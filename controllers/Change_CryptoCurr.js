@@ -28,8 +28,8 @@ exports.currency_Converter = async (req, res) => {
                         fromCurrency,
                         toCurrency,
                         price_day,
-                        from_data_main,
-                        to_data_main
+                        // from_data_main,
+                        // to_data_main
                     }
                 });
                 return; // Exit the function if successful
