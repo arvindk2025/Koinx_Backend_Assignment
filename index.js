@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 
 const bodyParser = require("body-parser");
 const changeCrypto_curr_routes = require("./routes/Change_Crypto");
@@ -15,6 +16,12 @@ const PORT = process.env.PORT || 3000;
 
 // API Route creation
 app.use(bodyParser.json());  // middleware
+app.use(
+	cors({
+		origin: "*",
+		credentials: true,
+	})
+);
 
 app.use("/api", changeCrypto_curr_routes);
 app.use('/api', companyRoutes);
