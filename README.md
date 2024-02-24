@@ -27,3 +27,8 @@
 
 ### Request and Response Examples
 - Request format: 
+
+
+##  Testing
+- Postman is used for testing the APIs.
+- API routes and expected responses are documented for each task.
