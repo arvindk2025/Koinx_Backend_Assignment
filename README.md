@@ -4,6 +4,8 @@
 
 ### Logic / Solution Overview
 1. Created a schema named `Crypto.js` in the `models` folder to store cryptocurrency names and IDs.
+![Koinx_Backend_Assignment ](./assets/img1.1.1.png?raw=true " StudyNotion ")
+![StudyNotion_EdTech_Platform ](./assets/img1.1.2.png?raw=true " StudyNotion ")
 2. Utilized Coingecko's API to fetch the list of all cryptocurrencies.
 3. Stored the fetched cryptocurrency data in a MongoDB database using the `Crypto` schema.
 4. Implemented a background job using `setInterval` in the `index.js` file to update the cryptocurrency data every 1 hour.
