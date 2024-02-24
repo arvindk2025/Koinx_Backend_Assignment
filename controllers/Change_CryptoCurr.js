@@ -22,15 +22,11 @@ exports.currency_Converter = async (req, res) => {
         );
         const to_data_main = to_data.data;
         let price_2 = to_data_main?.market_data?.current_price?.usd;
-        let price_on_day = price_1 / price_2;
+        let converted_price_on_day = price_1 / price_2;
 
         res.json({
           success: true,
-          data: {
-            fromCurrency,
-            toCurrency,
-            price_on_day
-          },
+          data: {converted_price_on_day},
         });
         return; // Exit the function if successful
       } catch (error) {
