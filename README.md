@@ -1,4 +1,4 @@
-# Cryptocurrency API Documentation
+# Koinx Backend Assignment Documentation
 
 ## Task 1: Fetching and Storing Cryptocurrency Data
 
