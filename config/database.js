@@ -3,12 +3,11 @@ require("dotenv").config();
 
 
 
-exports.connect = () => {
+exports.connect = async () => {
 	
 
-		mongoose.connect("mongodb+srv://arvindnnic1989602:b8mxguJgLSU8JOZG@cluster0.7cjpaz6.mongodb.net/Koinx_Backend_Assignment", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+		await mongoose.connect("mongodb+srv://arvindnnic1989602:b8mxguJgLSU8JOZG@cluster0.7cjpaz6.mongodb.net/Koinx_Backend_Assignment", {
+
 			dbName: 'Koinx_Backend_Assignment',
   retryWrites: true,
   w: "majority"
