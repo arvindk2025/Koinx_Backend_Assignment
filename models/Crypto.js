@@ -2,7 +2,6 @@ const mongoose = require("mongoose")
 
 const cryptoSchema = new mongoose.Schema({
     id: String,
-    symbol: String,
     name: String
 });
 
